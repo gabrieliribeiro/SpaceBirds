@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+
+@font-face {
+    font-family: 'Space';
+    src: url('../fonte/Savez.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root{
+    --cor1: #F294D9;
+    --cor2: #3F0C40;
+    --cor3: #5C2B8C;
+    --cor4: #F2D16D;
+    --cor5: #F21F0C;
+    --cor6: #1E061C;
+    --cor7: #C86455;
+    --cor8: #eda8f0;
+    --cor9: #A6D6E4;
+    --cor10:#ebc5ec;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-space: 'Space', cursive;
+    --fonte-destaque: 'Vujahday Script', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor8);
+    font-family: var(--fonte-padrao);
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+header>h1{
+    font-family: var(--fonte-space);
+    color: whitesmoke;
+    font-weight: normal;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.473);
+}
+header>p{
+    font-family: var(--fonte-destaque);
+    color: whitesmoke;
+    font-weight: normal;
+    font-size: 1.6em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
+}
+nav{
+    background-color: var(--cor2);
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.24);
+}
+nav > a{
+    color: var(--cor10);
+    padding: 7px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav >a:hover{
+    background-color: var(--cor4);
+    color: var(--cor6);
+}
+.responsive-image{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--cor10);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h1{
+    font-family: var(--fonte-destaque);
+    color: var(--cor2);
+    font-size: 2em;
+    font-weight: bold;
+}
+main h2{
+    font-family: var(--fonte-destaque);
+    color: var(--cor2);
+    font-weight: bolder;
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+main h4{
+    text-align: center;
+    font-weight: 1em;
+    text-indent: 8px;
+}
+main p{
+    text-align: justify;
+    margin: 10px 0px;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+main a {
+    background-color: var(--cor2);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 3px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+div.video{
+    background-color: var(--cor2);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.video>iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside{
+    background-color: var(--cor8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.301);
+}
+aside h3{
+    background-color: var(--cor2);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside; 
+    columns: 2;
+}
+footer > p >a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer{
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8em;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
